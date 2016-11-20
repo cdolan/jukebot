@@ -1,5 +1,6 @@
 Jukebot
 ========
+[![Build Status](https://travis-ci.org/cdolan/jukebot.svg?branch=master)](https://travis-ci.org/cdolan/jukebot)
 
 [Last.fm](http://www.last.fm/) scrobble bot for Slack.
 
