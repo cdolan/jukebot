@@ -11,9 +11,9 @@ Commands
 
 Reports what everyone's listening to right now according to Last.fm.
 
-**I'm <name> on Lastfm**
+**I'm \<name\> on Lastfm**
 
-Adds __name__ to the Last.fm profile database.
+Adds _name_ to the Last.fm profile database.
 
 Usage
 ------
