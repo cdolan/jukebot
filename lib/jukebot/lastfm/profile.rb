@@ -11,11 +11,15 @@ module Jukebot
       end
 
       def now_playing
-        response = Net::HTTP.get_response("www.last.fm", "/user/#{name}")
+	   	uri = URI("https://www.last.fm/user/#{name}")
+		Net::HTTP.start(uri.host, uri.port, :use_ssl => true) do |http|
+			request = Net::HTTP::Get.new uri
+			response = http.request request
 
-        case response
-        when Net::HTTPSuccess
-          extract_song_name(response.body)
+            case response
+            when Net::HTTPSuccess
+                extract_song_name(response.body)
+            end
         end
       end
 
